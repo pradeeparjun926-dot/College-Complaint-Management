@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - College Complaint Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+
+    <!-- College Header -->
+    <header class="auth-header">
+        <div class="logo">
+            <div class="logo-icon">🎓</div>
+            <div>
+                <h2>K.S.R. College of Engineering</h2>
+                <p>(Autonomous)</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login Card -->
+    <main class="auth-container">
+
+        <div class="auth-card">
+
+            <h1>Login</h1>
+            <h3>Access your account</h3>
+
+            <!-- Student / Admin -->
+            <div class="role-buttons">
+                <button type="button" id="studentBtn"
+                    class="role-btn selected"
+                    onclick="selectRole('Student')">
+                    Student
+                </button>
+
+                <button type="button" id="adminBtn"
+                    class="role-btn"
+                    onclick="selectRole('Admin')">
+                    Admin
+                </button>
+            </div>
+
+            <form id="loginForm">
+
+                <div class="auth-input">
+                    <span>👤</span>
+                    <input type="text"
+                        id="userEmail"
+                        placeholder="Email / Register Number"
+                        required>
+                </div>
+
+                <div class="auth-input">
+                    <span>🔒</span>
+                    <input type="password"
+                        id="userPassword"
+                        placeholder="Password"
+                        required>
+
+                    <span class="eye-icon"
+                        onclick="togglePassword()">👁</span>
+                </div>
+
+                <button type="submit" class="auth-submit">
+                    Login
+                </button>
+
+            </form>
+
+            <div class="auth-links">
+                <a href="#" onclick="forgotPassword(event)">
+                    Forgot Password?
+                </a>
+
+                <a href="register.html">
+                    New User? Register
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

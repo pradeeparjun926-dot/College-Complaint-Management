@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Complaint - KSR College</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="dashboard-logo">
+            <span>🎓</span>
+            <h2>K.S.R. College of Engineering</h2>
+        </div>
+
+        <div class="user-info">
+            <span>👤</span>
+            <span id="dashboardUser">Student</span>
+        </div>
+    </header>
+
+    <div class="dashboard-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <a href="dashboard.html" class="side-link">
+                🏠 Dashboard
+            </a>
+
+            <a href="submit-complaint.html" class="side-link">
+                ✏️ Submit Complaint
+            </a>
+
+            <a href="track-complaint.html" class="side-link active">
+                🔍 Track Complaint
+            </a>
+
+            <a href="my-complaints.html" class="side-link">
+                ▦ My Complaints
+            </a>
+
+            <a href="profile.html" class="side-link">
+                👤 Profile
+            </a>
+
+            <a href="feedback.html" class="side-link">
+                ⭐ Feedback
+            </a>
+
+            <a href="#" class="side-link logout"
+               onclick="logoutUser(event)">
+                ⇥ Logout
+            </a>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+
+            <div class="track-heading">
+                <div class="track-icon">🔍</div>
+
+                <div>
+                    <h1>Track Your Complaint</h1>
+                    <p>Check the status of your complaint</p>
+                </div>
+            </div>
+
+            <!-- Search Complaint -->
+            <div class="track-card">
+
+                <label for="complaintID">
+                    Enter Complaint ID
+                </label>
+
+                <div class="track-search">
+
+                    <input
+                        type="text"
+                        id="complaintID"
+                        placeholder="e.g. CM123456789">
+
+                    <button onclick="trackComplaint()">
+                        Track
+                    </button>
+
+                </div>
+
+                <p id="trackMessage"></p>
+
+            </div>
+
+            <!-- Complaint Result -->
+            <div class="track-result" id="trackResult">
+
+                <h2>Complaint Status</h2>
+
+                <div class="status-timeline">
+
+                    <div class="status-step" id="step1">
+                        <div class="status-circle">✓</div>
+                        <h3>Submitted</h3>
+                        <p id="date1">-</p>
+                    </div>
+
+                    <div class="status-line" id="line1"></div>
+
+                    <div class="status-step" id="step2">
+                        <div class="status-circle">2</div>
+                        <h3>Under Review</h3>
+                        <p id="date2">-</p>
+                    </div>
+
+                    <div class="status-line" id="line2"></div>
+
+                    <div class="status-step" id="step3">
+                        <div class="status-circle">3</div>
+                        <h3>Resolved</h3>
+                        <p id="date3">-</p>
+                    </div>
+
+                </div>
+
+                <div class="status-message" id="statusMessage">
+                    Complaint Submitted Successfully!
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="css/js/script.js"></script>
+
+</body>
+</html>dd                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

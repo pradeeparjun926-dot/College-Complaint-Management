@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - KSR College</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+<header class="dashboard-header">
+    <div class="dashboard-logo">
+        <span>🎓</span>
+        <h2>K.S.R. College of Engineering</h2>
+    </div>
+    <div class="user-info">
+        <span>👤</span>
+        <span>Administrator</span>
+    </div>
+</header>
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+        <a href="admin-dashboard.html" class="side-link active">🏠 Admin Dashboard</a>
+        <a href="#complaints" class="side-link">📋 Manage Complaints</a>
+        <a href="dashboard.html" class="side-link">👨‍🎓 Student View</a>
+        <a href="login.html" class="side-link logout"
+           onclick="logoutUser(event)">⇥ Logout</a>
+    </aside>
+
+    <main class="dashboard-content">
+
+        <div class="welcome-section">
+            <h1>Admin Dashboard</h1>
+            <p>Manage student complaints and update their status.</p>
+        </div>
+
+        <div class="stats-container">
+
+            <div class="stat-card">
+                <div class="stat-icon blue">📋</div>
+                <h3>Total Complaints</h3>
+                <h1 id="adminTotal">0</h1>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange">⏳</div>
+                <h3>Pending</h3>
+                <h1 id="adminPending">0</h1>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">✔</div>
+                <h3>Resolved</h3>
+                <h1 id="adminResolved">0</h1>
+            </div>
+
+        </div>
+
+        <h2 class="section-heading" id="complaints">
+            Manage Student Complaints
+        </h2>
+
+        <div class="recent-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Complaint ID</th>
+                        <th>Student</th>
+                        <th>Category</th>
+                        <th>Department</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="adminComplaintList">
+                    <tr>
+                        <td colspan="6">Loading complaints...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

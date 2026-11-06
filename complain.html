@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Complaint - KSR College</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="dashboard-logo">
+            <span>🎓</span>
+            <h2>K.S.R. College of Engineering</h2>
+        </div>
+
+        <div class="user-info">
+            <span>👤</span>
+            <span id="dashboardUser">Student</span>
+        </div>
+    </header>
+
+    <div class="dashboard-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <a href="dashboard.html" class="side-link">
+                🏠 Dashboard
+            </a>
+
+            <a href="submit-complaint.html" class="side-link active">
+                ✏️ Submit Complaint
+            </a>
+
+            <a href="track-complaint.html" class="side-link">
+                🔍 Track Complaint
+            </a>
+
+            <a href="my-complaints.html" class="side-link">
+                ▦ My Complaints
+            </a>
+
+            <a href="profile.html" class="side-link">
+                👤 Profile
+            </a>
+
+            <a href="feedback.html" class="side-link">
+                ⭐ Feedback
+            </a>
+
+            <a href="#" class="side-link logout"
+               onclick="logoutUser(event)">
+                ⇥ Logout
+            </a>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+
+            <div class="complaint-heading">
+                <div class="complaint-icon">➤</div>
+
+                <div>
+                    <h1>Submit a Complaint</h1>
+                    <p>Let us know your issue</p>
+                </div>
+            </div>
+
+            <!-- Complaint Form -->
+            <div class="complaint-form-card">
+
+                <form id="complaintForm">
+
+                    <div class="complaint-row">
+
+                        <div class="form-group">
+                            <label>Select Category</label>
+
+                            <select id="category" required>
+                                <option value="">Select Category</option>
+                                <option>Hostel Facility</option>
+                                <option>Classroom</option>
+                                <option>Library</option>
+                                <option>Transport</option>
+                                <option>Canteen</option>
+                                <option>Laboratory</option>
+                                <option>Wi-Fi / Internet</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Select Department</label>
+
+                            <select id="department" required>
+                                <option value="">Select Department</option>
+                                <option>Hostel</option>
+                                <option>Computer Science</option>
+                                <option>Library</option>
+                                <option>Transport</option>
+                                <option>Administration</option>
+                                <option>Maintenance</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label>Describe Your Complaint</label>
+
+                        <textarea
+                            id="complaintDescription"
+                            placeholder="Enter complaint details..."
+                            rows="5"
+                            required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Upload Evidence (Picture / Document)</label>
+
+                        <label for="evidence" class="upload-box">
+                            <span>☁️</span>
+                            <strong>Upload Evidence</strong>
+                            <p>Picture / Document</p>
+                            <small id="fileName">
+                                Click here to choose a file
+                            </small>
+                        </label>
+
+                        <input
+                            type="file"
+                            id="evidence"
+                            accept="image/*,.pdf,.doc,.docx"
+                            hidden>
+                    </div>
+
+                    <button type="submit" class="complaint-submit-btn">
+                        Submit Complaint
+                    </button>
+
+                </form>
+
+            </div>
+
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

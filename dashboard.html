@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - College Complaint Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- Top Navbar -->
+    <header class="dashboard-header">
+
+        <div class="dashboard-logo">
+            <span>🎓</span>
+            <h2>K.S.R. College of Engineering</h2>
+        </div>
+
+        <div class="user-info">
+            <span>👤</span>
+            <span id="dashboardUser">Student</span>
+            <span>⌄</span>
+        </div>
+
+    </header>
+
+    <div class="dashboard-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <a href="dashboard.html" class="side-link active">
+                🏠 Dashboard
+            </a>
+
+            <a href="submit-complaint.html" class="side-link">
+                ✏️ Submit Complaint
+            </a>
+
+            <a href="track-complaint.html" class="side-link">
+                🔍 Track Complaint
+            </a>
+            <a href="my-complaints.html">My Complaints</a>
+
+             <a href="profile.html">My Profile</a>
+             <a href="feedback.html">Feedback</a>
+             <a href="faq.html">FAQ</a>
+             <a href="about.html">About</a>
+             <a href="submit-complain.html">Submit Complaint</a>
+
+             <a href="service.html">Services</a>
+
+             <a href="contact.html">Contact Us</a>
+
+            <a href="my-complaints.html" class="side-link">
+                ▦ My Complaints
+            </a>
+
+            <a href="profile.html" class="side-link">
+                👤 Profile
+            </a>
+
+            <a href="feedback.html" class="side-link">
+                ⭐ Feedback
+            </a>
+
+            <a href="#" class="side-link logout"
+                onclick="logoutUser(event)">
+                ⇥ Logout
+            </a>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+
+            <div class="welcome-section">
+                <h1>Welcome to Dashboard!</h1>
+                <p>Manage and track your college complaints easily.</p>
+            </div>
+
+            <!-- Statistics -->
+            <div class="stats-container">
+
+                <div class="stat-card">
+                    <div class="stat-icon blue">📋</div>
+                    <h3>Total Complaints</h3>
+                    <h1 id="totalComplaints">5</h1>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon orange">⏳</div>
+                    <h3>Pending Complaints</h3>
+                    <h1>2</h1>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon green">✔</div>
+                    <h3>Resolved Complaints</h3>
+                    <h1>3</h1>
+                </div>
+
+            </div>
+
+            <!-- Quick Actions -->
+            <h2 class="section-heading">Quick Actions</h2>
+
+            <div class="quick-actions">
+
+                <a href="submit-complaint.html" class="action-card">
+                    <div>✏️</div>
+                    <h3>Submit Complaint</h3>
+                    <p>Register your new complaint.</p>
+                </a>
+
+                <a href="track-complaint.html" class="action-card">
+                    <div>🔍</div>
+                    <h3>Track Complaint</h3>
+                    <p>Check your complaint status.</p>
+                </a>
+
+                <a href="my-complaints.html" class="action-card">
+                    <div>📋</div>
+                    <h3>My Complaints</h3>
+                    <p>View all your complaints.</p>
+                </a>
+
+            </div>
+
+            <!-- Recent Complaints -->
+            <h2 class="section-heading">Recent Complaints</h2>
+
+            <div class="recent-table">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Complaint ID</th>
+                            <th>Category</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>CM2026001</td>
+                            <td>Hostel Facility</td>
+                            <td>05-11-2026</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>CM2026002</td>
+                            <td>Library</td>
+                            <td>04-11-2026</td>
+                            <td><span class="status resolved">Resolved</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>CM2026003</td>
+                            <td>Transport</td>
+                            <td>03-11-2026</td>
+                            <td><span class="status review">Under Review</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

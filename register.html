@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - College Complaint Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+
+    <!-- College Header -->
+    <header class="auth-header">
+        <div class="logo">
+            <div class="logo-icon">🎓</div>
+            <div>
+                <h2>K.S.R. College of Engineering</h2>
+                <p>(Autonomous)</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Register Container -->
+    <main class="auth-container">
+
+        <div class="auth-card register-card">
+
+            <h1>Register</h1>
+            <h3>Create your account</h3>
+
+            <form id="registerForm">
+
+                <!-- Name -->
+                <div class="auth-input">
+                    <span>👤</span>
+                    <input type="text"
+                        id="regName"
+                        placeholder="Name"
+                        required>
+                </div>
+
+                <!-- Email -->
+                <div class="auth-input">
+                    <span>✉️</span>
+                    <input type="email"
+                        id="regEmail"
+                        placeholder="Email Address"
+                        required>
+                </div>
+
+                <!-- Register Number -->
+                <div class="auth-input">
+                    <span>▣</span>
+                    <input type="text"
+                        id="regNumber"
+                        placeholder="Register Number"
+                        required>
+                </div>
+
+                <!-- Password -->
+                <div class="auth-input">
+                    <span>🔒</span>
+                    <input type="password"
+                        id="regPassword"
+                        placeholder="Password"
+                        required>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="auth-input">
+                    <span>🔒</span>
+                    <input type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm Password"
+                        required>
+                </div>
+
+                <!-- Register Button -->
+                <button type="submit" class="auth-submit">
+                    Register
+                </button>
+
+            </form>
+
+            <div class="register-login">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
